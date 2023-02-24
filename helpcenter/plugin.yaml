@@ -1,0 +1,17 @@
+plugin:
+    name: 'NielsVanDenDries.helpcenter::lang.plugin.name'
+    description: 'NielsVanDenDries.helpcenter::lang.plugin.description'
+    author: NielsVanDenDries
+    icon: oc-icon-question-circle
+    homepage: ''
+permissions:
+    helpcenter_beheerder:
+        tab: 'OmitCentral Help Center'
+        label: 'Help items bewerken'
+navigation:
+    main-menu-item:
+        label: 'OmitCentral Help Center'
+        url: nvandendriesdev/helpcenter/helpitem
+        icon: icon-question-circle
+        permissions:
+            - helpcenter_beheerder

@@ -1,0 +1,55 @@
+columns:
+    id:
+        label: id
+        type: number
+        searchable: true
+        sortable: true
+    taak:
+        label: taak
+        type: text
+        searchable: true
+        invisible: false
+        sortable: true
+    created_at:
+        label: created_at
+        type: datetime
+        searchable: false
+        sortable: true
+    updated_at:
+        label: updated_at
+        type: datetime
+        sortable: true
+    status:
+        label: status
+        type: text
+        searchable: true
+        sortable: true
+    toegewezen:
+        label: toegewezen
+        type: text
+        searchable: true
+        sortable: true
+    opmerkingen:
+        label: opmerkingen
+        type: text
+        invisible: true
+    bug:
+        label: bug
+        type: text
+        searchable: true
+        sortable: true
+    leverancier:
+        label: leverancier
+        type: text
+        searchable: true
+        sortable: true
+    park:
+        label: park
+        type: text
+        searchable: true
+        sortable: true
+    archive:
+        label: Gearchiveerd
+        type: switch
+        searchable: true
+        sortable: true

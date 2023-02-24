@@ -1,0 +1,11 @@
+name: Tapkasten
+modelClass: NvandendriesDev\Planning\Models\Tapkasten
+form: $/nvandendriesdev/planning/models/tapkasten/fields.yaml
+defaultRedirect: nvandendriesdev/planning/tapkasten
+create:
+    redirect: 'nvandendriesdev/planning/tapkasten/update/:id'
+    redirectClose: nvandendriesdev/planning/tapkasten
+update:
+    redirect: nvandendriesdev/planning/tapkasten
+    redirectClose: nvandendriesdev/planning/tapkasten
+preview: {  }

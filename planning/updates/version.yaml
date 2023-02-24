@@ -1,0 +1,98 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table nvandendriesdev_planning_db'
+    - builder_table_create_nvandendriesdev_planning_db.php
+1.0.3:
+    - 'Updated table nvandendriesdev_planning_db'
+    - builder_table_update_nvandendriesdev_planning_db.php
+1.0.4:
+    - 'Updated table nvandendriesdev_planning_db'
+    - builder_table_update_nvandendriesdev_planning_db_2.php
+1.0.5:
+    - 'Updated table nvandendriesdev_planning_db'
+    - builder_table_update_nvandendriesdev_planning_db_3.php
+1.0.6:
+    - 'Created table nvandendriesdev_planning_parken'
+    - builder_table_create_nvandendriesdev_planning_parken.php
+1.0.7:
+    - 'Updated table nvandendriesdev_planning_parken'
+    - builder_table_update_nvandendriesdev_planning_parken.php
+1.0.8:
+    - 'Drop table nvandendriesdev_planning_parken'
+    - builder_table_delete_nvandendriesdev_planning_parken.php
+1.0.9:
+    - 'Updated table nvandendriesdev_planning_db'
+    - builder_table_update_nvandendriesdev_planning_db_4.php
+1.0.10:
+    - 'Updated table nvandendriesdev_planning_db'
+    - builder_table_update_nvandendriesdev_planning_db_5.php
+1.0.11:
+    - 'Created table nvandendriesdev_planning_tapkasten'
+    - builder_table_create_nvandendriesdev_planning_tapkasten.php
+1.0.12:
+    - 'Updated table nvandendriesdev_planning_db'
+    - builder_table_update_nvandendriesdev_planning_db_6.php
+1.0.13:
+    - 'Updated table nvandendriesdev_planning_tapkasten'
+    - builder_table_update_nvandendriesdev_planning_tapkasten.php
+1.0.14:
+    - 'Updated table nvandendriesdev_planning_tapkasten'
+    - builder_table_update_nvandendriesdev_planning_tapkasten_2.php
+1.0.15:
+    - 'Updated table nvandendriesdev_planning_tapkasten'
+    - builder_table_update_nvandendriesdev_planning_tapkasten_3.php
+1.0.16:
+    - 'Updated table nvandendriesdev_planning_tapkasten'
+    - builder_table_update_nvandendriesdev_planning_tapkasten_4.php
+1.0.17:
+    - 'Updated table nvandendriesdev_planning_db'
+    - builder_table_update_nvandendriesdev_planning_db_7.php
+1.0.18:
+    - 'Updated table nvandendriesdev_planning_tapkasten'
+    - builder_table_update_nvandendriesdev_planning_tapkasten_5.php
+1.0.19:
+    - 'Created table nvandendriesdev_planning_relatie'
+    - builder_table_create_nvandendriesdev_planning_relatie.php
+1.0.20:
+    - 'Drop table nvandendriesdev_planning_relatie'
+    - builder_table_delete_nvandendriesdev_planning_relatie.php
+1.0.21:
+    - 'Created table nvandendriesdev_planning_development'
+    - builder_table_create_nvandendriesdev_planning_development.php
+1.0.22:
+    - 'Updated table nvandendriesdev_planning_development'
+    - builder_table_update_nvandendriesdev_planning_development.php
+1.0.23:
+    - 'Updated table nvandendriesdev_planning_development'
+    - builder_table_update_nvandendriesdev_planning_development_2.php
+1.0.24:
+    - 'Updated table nvandendriesdev_planning_development'
+    - builder_table_update_nvandendriesdev_planning_development_3.php
+1.0.25:
+    - 'Updated table nvandendriesdev_planning_development'
+    - builder_table_update_nvandendriesdev_planning_developmentstatus.php
+1.0.26:
+    - 'Updated table nvandendriesdev_planning_db'
+    - builder_table_update_nvandendriesdev_planning_db_8.php
+1.0.27:
+    - 'Updated table nvandendriesdev_planning_db'
+    - builder_table_update_nvandendriesdev_planning_db_9.php
+1.0.28:
+    - 'Updated table nvandendriesdev_planning_db'
+    - builder_table_update_nvandendriesdev_planning_db_10.php
+1.0.29:
+    - 'Updated table nvandendriesdev_planning_db'
+    - builder_table_update_nvandendriesdev_planning_db_11.php
+1.0.30:
+    - 'Updated table nvandendriesdev_planning_developmentstatus'
+    - builder_table_update_nvandendriesdev_planning_developmentstatus_2.php
+1.0.31:
+    - 'Created table nvandendriesdev_planning_leaflet_maps'
+    - builder_table_create_nvandendriesdev_planning_leaflet_maps.php
+1.0.32:
+    - 'Created table nvandendriesdev_planning_leaflet_objects'
+    - builder_table_create_nvandendriesdev_planning_leaflet_objects.php
+1.0.33:
+    - 'Updated table nvandendriesdev_planning_leaflet_objects'
+    - builder_table_update_nvandendriesdev_planning_leaflet_objects.php

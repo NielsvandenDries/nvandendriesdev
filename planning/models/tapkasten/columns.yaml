@@ -1,0 +1,66 @@
+columns:
+    id:
+        label: id
+        type: number
+        invisible: true
+    maps_id:
+        label: maps_id
+        type: number
+        invisible: true
+    name:
+        label: Name
+        type: text
+        searchable: true
+        sortable: true
+    type:
+        label: type
+        type: text
+        invisible: true
+    position:
+        label: 'GPS Locatie'
+        type: text
+    parameters:
+        label: parameters
+        type: text
+        invisible: true
+    popup:
+        label: popup
+        type: text
+        invisible: true
+    created_at:
+        label: created_at
+        type: datetime
+        invisible: true
+    updated_at:
+        label: 'Laatste Update'
+        type: datetime
+        searchable: true
+        sortable: true
+    picture:
+        label: picture
+        type: text
+        invisible: true
+    visual_status:
+        label: 'Visuele Status'
+        type: text
+        searchable: true
+        sortable: true
+    park:
+        label: Park
+        type: text
+        searchable: true
+        sortable: true
+    splitters:
+        label: Splitters
+        type: text
+        sortable: true
+    Taps:
+        label: 'Multi Taps'
+        type: text
+        searchable: true
+        sortable: true
+    versterkers:
+        label: Versterker
+        type: switch
+        searchable: true
+        sortable: true

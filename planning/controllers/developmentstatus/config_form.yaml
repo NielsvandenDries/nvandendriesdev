@@ -1,0 +1,11 @@
+name: DevelopmentStatus
+modelClass: NvandendriesDev\Planning\Models\DevelopmentStatus
+form: $/nvandendriesdev/planning/models/developmentstatus/fields.yaml
+defaultRedirect: nvandendriesdev/planning/developmentstatus
+create:
+    redirect: 'nvandendriesdev/planning/developmentstatus/update/:id'
+    redirectClose: nvandendriesdev/planning/developmentstatus
+update:
+    redirect: nvandendriesdev/planning/developmentstatus
+    redirectClose: nvandendriesdev/planning/developmentstatus
+preview: {  }

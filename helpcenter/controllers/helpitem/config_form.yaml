@@ -1,0 +1,11 @@
+name: HelpItem
+modelClass: NvandendriesDev\Helpcenter\Models\Item
+form: $/nvandendriesdev/helpcenter/models/item/fields.yaml
+defaultRedirect: nvandendriesdev/helpcenter/helpitem
+create:
+    redirect: 'nvandendriesdev/helpcenter/helpitem/update/:id'
+    redirectClose: nvandendriesdev/helpcenter/helpitem
+update:
+    redirect: nvandendriesdev/helpcenter/helpitem
+    redirectClose: nvandendriesdev/helpcenter/helpitem
+preview: {  }

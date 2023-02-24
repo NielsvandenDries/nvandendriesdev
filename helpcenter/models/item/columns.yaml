@@ -1,0 +1,35 @@
+columns:
+    id:
+        label: id
+        type: number
+        invisible: true
+    created_at:
+        label: 'Aangemaakt op'
+        type: datetime
+        sortable: true
+    updated_at:
+        label: 'Bijgewerkt op'
+        type: datetime
+        sortable: true
+    help_text:
+        label: Text
+        type: text
+        invisible: true
+    help_titel:
+        label: Titel
+        type: text
+        searchable: true
+        sortable: true
+    categorie:
+        label: Categorie
+        type: text
+        searchable: false
+        sortable: true
+    tags:
+        label: Tags
+        type: text
+        searchable: true
+        sortable: true
+    confluence:
+        label: 'Confluence URL'
+        type: text

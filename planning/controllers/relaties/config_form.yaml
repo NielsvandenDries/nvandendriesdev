@@ -1,0 +1,11 @@
+name: Relaties
+modelClass: NvandendriesDev\Planning\Models\Relaties
+form: $/nvandendriesdev/planning/models/relaties/fields.yaml
+defaultRedirect: nvandendriesdev/planning/relaties
+create:
+    redirect: 'nvandendriesdev/planning/relaties/update/:id'
+    redirectClose: nvandendriesdev/planning/relaties
+update:
+    redirect: nvandendriesdev/planning/relaties
+    redirectClose: nvandendriesdev/planning/relaties
+preview: {  }

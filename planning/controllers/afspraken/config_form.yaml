@@ -1,0 +1,11 @@
+name: Afspraken
+modelClass: NvandendriesDev\Planning\Models\Afspraak
+form: $/nvandendriesdev/planning/models/afspraak/fields.yaml
+defaultRedirect: nvandendriesdev/planning/afspraken
+create:
+    redirect: 'nvandendriesdev/planning/afspraken/update/:id'
+    redirectClose: nvandendriesdev/planning/afspraken
+update:
+    redirect: nvandendriesdev/planning/afspraken
+    redirectClose: nvandendriesdev/planning/afspraken
+preview: {  }

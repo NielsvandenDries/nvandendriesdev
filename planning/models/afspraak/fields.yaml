@@ -1,0 +1,54 @@
+fields:
+    secties_cp:
+        label: 'Contact info'
+        span: auto
+        type: section
+    adres:
+        label: Adres
+        span: full
+        required: 1
+        type: text
+    cp_naam:
+        label: Naam
+        span: auto
+        type: text
+    cp_nummer:
+        label: Telefoonnummer
+        span: auto
+        type: text
+    section1:
+        label: 'Afspraak Informatie'
+        span: full
+        type: section
+    datum:
+        label: 'Datum en Tijd'
+        mode: datetime
+        span: auto
+        type: datepicker
+    park:
+        label: Park
+        span: auto
+        options:
+            'Noordzee Park': 'Noordzee Park'
+        showSearch: true
+        type: dropdown
+    taak:
+        label: Taak
+        size: large
+        span: full
+        required: 1
+        type: textarea
+    status:
+        label: Status
+        span: auto
+        options:
+            Afgerond: Afgerond
+            'Niet Afgerond': 'Niet Afgerond'
+            'Vervolg afspraak': 'Vervolg afspraak'
+        type: balloon-selector
+    archive:
+        label: Archiveer
+        span: auto
+        'on': ja
+        'off': nee
+        type: switch

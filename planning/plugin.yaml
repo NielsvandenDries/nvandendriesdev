@@ -1,0 +1,47 @@
+plugin:
+    name: 'nvandendriesdev.planning::lang.plugin.name'
+    description: 'nvandendriesdev.planning::lang.plugin.description'
+    author: NvandenDries.dev
+    icon: oc-icon-calendar
+    homepage: 'https://nvandendries.dev'
+permissions:
+    planning_beheerder:
+        tab: 'OmitCentral Toolkit'
+        label: 'Planning beheer'
+    development_beheerder:
+        tab: 'OmitCentral Toolkit'
+        label: 'Development beheer'
+    tapkasten_beheerder:
+        tab: 'OmitCentral Toolkit'
+        label: 'Tapkasten beheer'
+    Leaflet:
+        tab: 'OmitCentral Toolkit'
+        label: 'Maps beheer'
+navigation:
+    main-menu-item:
+        label: 'OmitCentral Toolkit'
+        url: /
+        icon: icon-wrench
+        permissions:
+            - planning_beheerder
+            - tapkasten_beheerder
+            - development_beheerder
+        sideMenu:
+            side-menu-item:
+                label: 'Klant Afspraken'
+                url: nvandendriesdev/planning/afspraken
+                icon: icon-calendar
+                permissions:
+                    - planning_beheerder
+            side-menu-item2:
+                label: 'Tapkasten Bewerken'
+                url: nvandendriesdev/planning/tapkasten
+                icon: icon-location-arrow
+                permissions:
+                    - tapkasten_beheerder
+            side-menu-item3:
+                label: Development
+                url: nvandendriesdev/planning/developmentstatus
+                icon: icon-gears
+                permissions:
+                    - development_beheerder

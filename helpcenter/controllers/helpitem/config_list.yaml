@@ -1,0 +1,12 @@
+title: HelpItem
+modelClass: NvandendriesDev\Helpcenter\Models\Item
+list: $/nvandendriesdev/helpcenter/models/item/columns.yaml
+recordUrl: 'nvandendriesdev/helpcenter/helpitem/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

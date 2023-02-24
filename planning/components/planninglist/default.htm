@@ -1,0 +1,22 @@
+{#
+This plugin is written by Niels van den Dries of Open Minded IT, for the project OmitCentral. 
+If you have any questions about this Plugin or you have a bug let me know via my github
+https://github.com/NielsvandenDries/nvandendriesdev/issues
+#}
+
+{% set afspraak = __SELF__.afspraaklist %}
+
+{% for afspraaklist in afspraak %}
+<br>
+<div class="p-1 card" style="background-color: var(--bs-success-bg-subtle);">
+    <h5 class="card-title"><i class="bi bi-geo-alt-fill"></i> {{ afspraaklist.adres }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-clock-fill"></i><i> {{ afspraaklist.datum }}</i></h6>
+    <p class="card-text"><strong>Contactgegevens:</strong><br> {{ afspraaklist.cp_naam }} - <a href="tel:{{ afspraaklist.cp_nummer|raw }}">{{ afspraaklist.cp_nummer|raw }}</a></p>
+    <p class="card-text"><strong>Beschrijving:</strong><br> {{ afspraaklist.taak }}</p>
+    {# <p class="card-text">{{ afspraaklist.status }}</p> #}
+    <p class="card-text"><strong>Status:</strong><br> {{ afspraaklist.status }}</p>
+    <a class="btn btn-danger" href="{{ 'nzp/nzp-report'|page }}" role="button">Afronden</a>
+</div>
+
+{% endfor %}
+

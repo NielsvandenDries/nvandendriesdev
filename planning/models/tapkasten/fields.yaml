@@ -1,0 +1,74 @@
+tabs:
+    fields:
+        popup:
+            label: Opmerkingen
+            size: giant
+            span: right
+            type: richeditor
+            tab: 'General Info'
+        position:
+            label: 'GPS locatie'
+            span: auto
+            required: 1
+            type: text
+            comment: '(Voorbeeld 51.8198191, 3.9155772)'
+            tab: 'General Info'
+        name:
+            label: 'Dichtstbijzijnde adres'
+            span: left
+            required: 1
+            type: text
+            tab: 'General Info'
+        park:
+            label: Park
+            options:
+                'Noordzee Park': 'Noordzee Park'
+            showSearch: true
+            span: left
+            type: dropdown
+            tab: 'General Info'
+        picture:
+            label: Foto
+            mode: image
+            span: left
+            type: mediafinder
+            tab: 'General Info'
+        created_at:
+            label: 'Aangemaakt op'
+            span: left
+            readOnly: 1
+            type: text
+            tab: 'General Info'
+        updated_at:
+            label: 'Laatste update'
+            span: left
+            readOnly: 1
+            type: text
+            tab: 'General Info'
+        visual_status:
+            label: 'Visuele Status'
+            span: left
+            options:
+                Slecht: Slecht
+                Gemiddeld: Gemiddeld
+                Goed: Goed
+                'Als Nieuw': 'Als Nieuw'
+            type: balloon-selector
+            tab: 'General Info'
+        splitters:
+            label: 'Aantal Splitters'
+            span: left
+            type: number
+            tab: Hardware
+        Taps:
+            label: 'Aantal Taps'
+            span: left
+            type: number
+            tab: Hardware
+        versterkers:
+            label: 'Versterker?'
+            'on': Ja
+            'off': Nee
+            span: left
+            type: switch
+            tab: Hardware

@@ -1,0 +1,12 @@
+title: Relaties
+modelClass: NvandendriesDev\Planning\Models\Relaties
+list: $/nvandendriesdev/planning/models/relaties/columns.yaml
+recordUrl: 'nvandendriesdev/planning/relaties/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

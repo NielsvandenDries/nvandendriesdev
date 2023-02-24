@@ -1,0 +1,108 @@
+columns:
+    Naam:
+        label: Naam
+        type: number
+        searchable: true
+    id:
+        label: id
+        type: number
+        invisible: true
+    technischeruimte:
+        label: technischeruimte
+        type: switch
+    eindversterker01_01:
+        label: eindversterker01_01
+        type: switch
+    groepversterker1:
+        label: groepversterker1
+        type: switch
+    groepversterker2:
+        label: groepversterker2
+        type: switch
+    groepversterker3:
+        label: groepversterker3
+        type: switch
+    groepversterker4:
+        label: groepversterker4
+        type: switch
+    groepversterker5:
+        label: groepversterker5
+        type: switch
+    eindversterker01_02:
+        label: eindversterker01_02
+        type: switch
+    eindversterker01_03:
+        label: eindversterker01_03
+        type: switch
+    eindversterker01_04:
+        label: eindversterker01_04
+        type: switch
+    eindversterker01_05:
+        label: eindversterker01_05
+        type: switch
+    eindversterker01_06:
+        label: eindversterker01_06
+        type: switch
+    eindversterker02_01:
+        label: eindversterker02_01
+        type: switch
+    eindversterker02_02:
+        label: eindversterker02_02
+        type: switch
+    eindversterker02_03:
+        label: eindversterker02_03
+        type: switch
+    eindversterker02_04:
+        label: eindversterker02_04
+        type: switch
+    eindversterker02_05:
+        label: eindversterker02_05
+        type: switch
+    eindversterker02_06:
+        label: eindversterker02_06
+        type: switch
+    eindversterker03_01:
+        label: eindversterker03_01
+        type: switch
+    eindversterker03_02:
+        label: eindversterker03_02
+        type: switch
+    eindversterker03_03:
+        label: eindversterker03_03
+        type: switch
+    eindversterker03_04:
+        label: eindversterker03_04
+        type: switch
+    eindversterker03_05:
+        label: eindversterker03_05
+        type: switch
+    eindversterker04_01:
+        label: eindversterker04_01
+        type: switch
+    eindversterker04_02:
+        label: eindversterker04_02
+        type: switch
+    eindversterker04_03:
+        label: eindversterker04_03
+        type: switch
+    eindversterker04_04:
+        label: eindversterker04_04
+        type: switch
+    eindversterker04_05:
+        label: eindversterker04_05
+        type: switch
+    eindversterker05_01:
+        label: eindversterker05_01
+        type: switch
+    eindversterker05_02:
+        label: eindversterker05_02
+        type: switch
+    eindversterker05_03:
+        label: eindversterker05_03
+        type: switch
+    eindversterker05_04:
+        label: eindversterker05_04
+        type: switch
+    park:
+        label: Park
+        type: text

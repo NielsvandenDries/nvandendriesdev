@@ -1,0 +1,41 @@
+columns:
+    id:
+        label: ID
+        type: number
+        invisible: true
+    adres:
+        label: Adres
+        type: text
+        searchable: true
+        sortable: true
+    taak:
+        label: Taak
+        type: text
+    datum:
+        label: Datum
+        type: text
+        searchable: true
+        sortable: true
+    park:
+        label: Park
+        type: text
+        searchable: true
+        sortable: true
+    status:
+        label: Status
+        type: text
+        searchable: true
+        sortable: true
+    cp_naam:
+        label: Contactpersoon
+        type: text
+        searchable: true
+        sortable: true
+    cp_nummer:
+        label: Telefoonnummer
+        type: text
+        searchable: true
+        sortable: true
+    archive:
+        label: Gearchiveerd
+        type: switch

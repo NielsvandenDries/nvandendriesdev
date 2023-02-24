@@ -1,0 +1,18 @@
+{#
+This plugin is written by Niels van den Dries of Open Minded IT, for the project OmitCentral. 
+If you have any questions about this Plugin or you have a bug let me know via my github
+https://github.com/NielsvandenDries/nvandendriesdev/issues
+#}
+
+{% set DevelopmentStatus = __SELF__.status %}
+
+{% for status in DevelopmentStatus %}
+<ul class="m-1 list-group">
+    <li class="list-group-item list-group-item-info"><strong><i class="bi bi-list-task"></i> BugID:</strong> {{ status.id }}: <i>"{{ status.taak }}"</i></strong></li>
+    <li class="list-group-item list-group-item-light"><strong>Toegewezen aan:</strong> {{ status.toegewezen }}</li>
+    <li class="list-group-item list-group-item-light"><strong>Status:</strong> {{ status.status }}</li>
+    <li class="list-group-item list-group-item-light"><strong>Laatste update:</strong> {{ status.updated_at }}<br><strong>Aangemaakt op:</strong> {{ status.created_at }}</li>
+    <li class="list-group-item list-group-item-light"><strong>Project:</strong> {{ status.park }}</li>
+    <li class="list-group-item list-group-item-light"><strong>Omschrijving:</strong> {{ status.opmerkingen|raw }}</li>
+</ul>
+{% endfor %}

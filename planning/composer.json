@@ -1,0 +1,17 @@
+{
+    "name": "nvandendriesdev/planning-plugin",
+    "type": "october-plugin",
+    "description": "meaningful description...",
+    "require": {
+        "composer/installers": "~1.0",
+        "php": ">=7.0",
+        "rainlab/builder-plugin": "~1.2.6",
+        "timfoerster/leaflet-plugin": ">=1.1.0"
+    },
+    "authors": [
+        {
+            "name": "Niels van den Dries",
+            "email": "niels@openmindedit.nl"
+        }
+    ]
+}

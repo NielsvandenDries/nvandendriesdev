@@ -1,0 +1,88 @@
+fields:
+    taak:
+        label: Titel
+        span: full
+        required: 1
+        type: text
+    toegewezen:
+        label: 'Toegewezen aan'
+        span: auto
+        showSearch: true
+        options:
+            Niels: Niels
+            Sjoerd: Sjoerd
+        type: dropdown
+    park:
+        label: Park
+        options:
+            'Noordzee Park': 'Noordzee Park'
+            OmitCentral: OmitCentral
+        showSearch: true
+        span: auto
+        required: 1
+        type: dropdown
+    status:
+        label: Status
+        options:
+            Nieuw: Nieuw
+            Wachten: Wachten
+            Toegewezen: Toegewezen
+            'In behandeling': 'In behandeling'
+            Opgelost: Opgelost
+            Gesloten: Gesloten
+        span: auto
+        required: 1
+        type: balloon-selector
+    bug:
+        label: Bug
+        options:
+            Ja: Ja
+            Nee: Nee
+        showSearch: true
+        span: auto
+        required: 1
+        type: dropdown
+    opmerkingen:
+        label: Opmerkingen
+        size: huge
+        span: full
+        required: 1
+        type: richeditor
+    leverancier:
+        label: Leverancier
+        span: auto
+        type: text
+        comment: 'Indien een leverancier is betrokken dan graag hier vermelden.'
+    id:
+        label: Id
+        span: auto
+        readOnly: 1
+        hidden: 1
+        context:
+            - create
+            - preview
+        type: text
+    created_at:
+        label: 'Gemaakt op'
+        span: auto
+        readOnly: 1
+        hidden: 1
+        context:
+            - create
+            - preview
+        type: text
+    updated_at:
+        label: 'Laatste update'
+        span: auto
+        readOnly: 1
+        hidden: 1
+        context:
+            - create
+            - preview
+        type: text
+    archive:
+        label: Archiveer
+        span: auto
+        'on': Ja
+        'off': Nee
+        type: switch

@@ -1,0 +1,36 @@
+fields:
+    section1:
+        label: 'OmitCentral Help Center'
+        span: full
+        readOnly: 1
+        type: section
+    help_titel:
+        label: Tekst
+        span: left
+        required: 1
+        type: text
+    categorie:
+        label: Categorie
+        options:
+            Frond-end: Frond-end
+            Back-end: Back-end
+        span: right
+        type: balloon-selector
+    help_text:
+        label: Beschrijving
+        size: giant
+        span: full
+        required: 1
+        type: richeditor
+    tags:
+        label: Tags
+        span: auto
+        mode: string
+        separator: comma
+        customTags: true
+        useKey: false
+        type: taglist
+    confluence:
+        label: 'Confluence URL'
+        span: auto
+        type: text

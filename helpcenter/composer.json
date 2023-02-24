@@ -1,0 +1,16 @@
+{
+    "name": "nvandendriesdev/helpcenter-plugin",
+    "type": "october-plugin",
+    "description": "OmitCentral helpcenter Plugin",
+    "require": {
+        "composer/installers": "~1.0",
+        "php": ">=7.0",
+        "rainlab/builder-plugin": "~1.2.6"
+    },
+    "authors": [
+        {
+            "name": "Niels van den Dries",
+            "email": "niels@openmindedit.nl"
+        }
+    ]
+}

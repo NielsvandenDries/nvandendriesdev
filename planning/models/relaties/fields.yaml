@@ -1,0 +1,199 @@
+fields:
+    Naam:
+        label: Naam
+        span: auto
+        type: text
+    park:
+        label: Park
+        span: auto
+        showSearch: true
+        options:
+            'Noordzee Park': 'Noordzee Park'
+        type: dropdown
+tabs:
+    fields:
+        groepversterker1:
+            label: 'Groepversterker 1'
+            span: auto
+            type: switch
+            tab: Groepversterkers
+        groepversterker2:
+            label: 'Groepversterker 2'
+            span: auto
+            type: switch
+            tab: Groepversterkers
+        groepversterker3:
+            label: 'Groepversterker 3'
+            span: auto
+            type: switch
+            tab: Groepversterkers
+        groepversterker4:
+            label: 'Groepversterker 4'
+            span: auto
+            type: switch
+            tab: Groepversterkers
+        groepversterker5:
+            label: 'Groepversterker 5'
+            span: auto
+            type: switch
+            tab: Groepversterkers
+        section1:
+            label: 'EV 01'
+            span: full
+            type: section
+            tab: Eindversterkers
+        eindversterker01_01:
+            label: 'eindversterker 01_01'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        eindversterker01_02:
+            label: 'eindversterker 01_02'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        eindversterker01_03:
+            label: 'eindversterker 01_03'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        eindversterker01_04:
+            label: 'eindversterker 01_04'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        eindversterker01_05:
+            label: 'eindversterker 01_05'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        eindversterker01_06:
+            label: 'eindversterker 01_06'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        section2:
+            label: EV2
+            span: full
+            type: section
+            tab: Eindversterkers
+        eindversterker02_01:
+            label: 'eindversterker 02_01'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        eindversterker02_02:
+            label: 'eindversterker 02_02'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        eindversterker02_03:
+            label: 'eindversterker 02_03'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        eindversterker02_04:
+            label: 'eindversterker 02_04'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        eindversterker02_05:
+            label: 'eindversterker 02_05'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        eindversterker02_06:
+            label: 'eindversterker 02_06'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        section3:
+            label: EV3
+            span: full
+            type: section
+            tab: Eindversterkers
+        eindversterker03_01:
+            label: 'eindversterker 03_01'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        eindversterker03_02:
+            label: 'eindversterker 03_02'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        eindversterker03_03:
+            label: 'eindversterker 03_03'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        eindversterker03_04:
+            label: 'eindversterker 03_04'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        eindversterker03_05:
+            label: 'eindversterker 03_05'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        section4:
+            label: EV4
+            span: full
+            type: section
+            tab: Eindversterkers
+        eindversterker04_01:
+            label: 'eindversterker 04_01'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        eindversterker04_02:
+            label: 'eindversterker 04_02'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        eindversterker04_03:
+            label: 'eindversterker 04_03'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        eindversterker04_04:
+            label: 'eindversterker 04_04'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        eindversterker04_05:
+            label: 'eindversterker 04_05'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        section5:
+            label: EV5
+            span: full
+            type: section
+            tab: Eindversterkers
+        eindversterker05_01:
+            label: 'eindversterker 05_01'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        eindversterker05_02:
+            label: 'eindversterker 05_02'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        eindversterker05_03:
+            label: 'eindversterker 05_03'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        eindversterker05_04:
+            label: 'eindversterker 05_04'
+            span: auto
+            type: switch
+            tab: Eindversterkers
+        technischeruimte:
+            label: 'Technische ruimte'
+            span: full
+            type: switch
+            tab: 'Technische ruimte'
