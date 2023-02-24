@@ -4,8 +4,7 @@ list: $/nvandendriesdev/planning/models/afspraak/columns.yaml
 recordUrl: 'nvandendriesdev/planning/afspraken/update/:id'
 noRecordsMessage: 'backend::lang.list.no_records'
 recordsPerPage: 20
-showSetup: true
-showCheckboxes: true
+showSetup: 1
 toolbar:
     buttons: list_toolbar
     search:
