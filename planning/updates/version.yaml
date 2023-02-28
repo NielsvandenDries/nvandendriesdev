@@ -96,3 +96,9 @@
 1.0.33:
     - 'Updated table nvandendriesdev_planning_leaflet_objects'
     - builder_table_update_nvandendriesdev_planning_leaflet_objects.php
+1.0.34:
+    - 'Drop table nvandendriesdev_planning_leaflet_maps'
+    - builder_table_delete_nvandendriesdev_planning_leaflet_maps.php
+1.0.35:
+    - 'Drop table nvandendriesdev_planning_leaflet_objects'
+    - builder_table_delete_nvandendriesdev_planning_leaflet_objects.php

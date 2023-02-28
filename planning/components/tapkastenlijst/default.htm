@@ -1,0 +1,19 @@
+{#
+This plugin is written by Niels van den Dries of Open Minded IT, for the project OmitCentral. 
+If you have any questions about this Plugin or you have a bug let me know via my github
+https://github.com/NielsvandenDries/nvandendriesdev/issues
+#}
+
+{% set tapkasten = __SELF__.kasten %}
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Selecteer de Tapkast
+    </button>
+    <ul class="dropdown-menu">
+        {% for kasten in tapkasten %}
+        <li><a class="dropdown-item" href="https://omitcentral-dev.openmindedit.cloud/tapkasten-details/{{ kasten.id }}">{{ kasten.name }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+
+

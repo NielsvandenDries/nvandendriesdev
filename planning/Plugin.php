@@ -16,6 +16,7 @@ class Plugin extends PluginBase
         return [
             '\Nvandendriesdev\Planning\Components\Planninglist' => 'Planninglist',
             '\Nvandendriesdev\Planning\Components\development' => 'development',
+            '\Nvandendriesdev\Planning\Components\Tapkastenlijst' => 'Tapkastenlijst',
         ];
     }
 }
