@@ -6,17 +6,20 @@ plugin:
     homepage: 'https://nvandendries.dev'
 permissions:
     planning_beheerder:
-        tab: 'OmitCentral Toolkit'
+        tab: 'nvandendriesdev.planning::lang.plugin.description'
         label: 'Planning beheer'
     development_beheerder:
-        tab: 'OmitCentral Toolkit'
+        tab: 'nvandendriesdev.planning::lang.plugin.description'
         label: 'Development beheer'
     tapkasten_beheerder:
-        tab: 'OmitCentral Toolkit'
+        tab: 'nvandendriesdev.planning::lang.plugin.description'
         label: 'Tapkasten beheer'
     Leaflet:
-        tab: 'OmitCentral Toolkit'
+        tab: 'nvandendriesdev.planning::lang.plugin.description'
         label: 'Maps beheer'
+    werkbonnen_beheerder:
+        tab: 'nvandendriesdev.planning::lang.plugin.description'
+        label: 'Werkbonnen beheer'
 navigation:
     main-menu-item:
         label: 'OmitCentral Toolkit'
@@ -45,3 +48,9 @@ navigation:
                 icon: icon-gears
                 permissions:
                     - development_beheerder
+            side-menu-item4:
+                label: Werkbonnen
+                url: nvandendriesdev/planning/werkbonnen
+                icon: icon-paper-plane-o
+                permissions:
+                    - werkbonnen_beheerder

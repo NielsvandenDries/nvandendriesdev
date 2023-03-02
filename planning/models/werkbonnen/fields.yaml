@@ -1,0 +1,11 @@
+fields:
+    werkbonnaam:
+        label: 'Naam werkbon'
+        span: full
+        required: 1
+        type: text
+    park:
+        label: Park
+        span: auto
+        required: 1
+        type: text

@@ -1,0 +1,10 @@
+columns:
+    updated_at:
+        label: 'Laatste Update'
+        type: datetime
+    werkbonnaam:
+        label: Naam
+        type: text
+    park:
+        label: Park
+        type: text

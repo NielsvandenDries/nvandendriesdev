@@ -1,0 +1,11 @@
+name: Werkbonnen
+modelClass: NvandendriesDev\Planning\Models\Werkbonnen
+form: $/nvandendriesdev/planning/models/werkbonnen/fields.yaml
+defaultRedirect: nvandendriesdev/planning/werkbonnen
+create:
+    redirect: 'nvandendriesdev/planning/werkbonnen/update/:id'
+    redirectClose: nvandendriesdev/planning/werkbonnen
+update:
+    redirect: nvandendriesdev/planning/werkbonnen
+    redirectClose: nvandendriesdev/planning/werkbonnen
+preview: {  }

@@ -102,3 +102,18 @@
 1.0.35:
     - 'Drop table nvandendriesdev_planning_leaflet_objects'
     - builder_table_delete_nvandendriesdev_planning_leaflet_objects.php
+1.0.36:
+    - 'Created table nvandendriesdev_planning_werkbonnen'
+    - builder_table_create_nvandendriesdev_planning_werkbonnen.php
+1.0.37:
+    - 'Updated table nvandendriesdev_planning_werkbonnen'
+    - builder_table_update_nvandendriesdev_planning_werkbonnen.php
+1.0.38:
+    - 'Updated table nvandendriesdev_planning_werkbonnen'
+    - builder_table_update_nvandendriesdev_planning_werkbonnen_2.php
+1.0.39:
+    - 'Updated table nvandendriesdev_planning_werkbonnen'
+    - builder_table_update_nvandendriesdev_planning_werkbonnen_3.php
+1.0.40:
+    - 'Updated table nvandendriesdev_planning_werkbonnen'
+    - builder_table_update_nvandendriesdev_planning_werkbonnen_4.php

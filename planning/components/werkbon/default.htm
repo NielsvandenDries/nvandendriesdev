@@ -1,0 +1,250 @@
+{% set Werkbonnen = __SELF__.bon %}
+
+{% for bon in Werkbonnen %}
+    
+        <h1>{{ bon.werkbonnaam }} - {{ bon.park }}</h1>
+        <hr>
+        <form>
+            <!-- Klant fields -->
+            <div class="mb-3">
+              <label for="EngineerNaam" class="form-label">Naam Engineer:</label>
+              <input class="form-control" type="number" id="EngineerNaam" name="EngineerNaam">
+            </div>
+            <div class="mb-3">
+              <label for="OwnerNaam" class="form-label">Naam Eigenaar:</label>
+              <input class="form-control" type="number" id="OwnerNaam" name="OwnerNaam">
+            </div>
+            <div class="mb-3">
+              <label for="adres" class="form-label">Adres kavel:</label>
+              <input class="form-control" type="number" id="adres" name="adres">
+            </div>
+            <hr>
+            <!-- Item Fields -->
+            <div class="mb-3">
+              <label for="POF" class="form-label">Onderband Filter/splitter POF:</label>
+              <input class="form-control" type="number" id="POF" name="POF">
+            </div>
+            <div class="mb-3">
+              <label for="Kabel" class="form-label">Kabelkeur Coaxkabel per meter:</label>
+              <input class="form-control" type="number" id="Kabel" name="Kabel">
+            </div>
+            <div class="mb-3">
+              <label for="verloop" class="form-label">Verloopstekker male/female recht:</label>
+              <input class="form-control" type="number" id="verloop" name="verloop">
+            </div>
+            <div class="mb-3">
+              <label for="fconnectorkoppel" class="form-label">F-Connector koppelstuk - Female:</label>
+              <input class="form-control" type="number" id="fconnectorkoppel" name="fconnectorkoppel">
+            </div>
+            <div class="mb-3">
+              <label for="verloophaaks" class="form-label">Verloopstekker male/female recht haaks:</label>
+              <input class="form-control" type="number" id="verloophaaks" name="verloophaaks">
+            </div>
+            <div class="mb-3">
+              <label for="WCD" class="form-label">Aansluitdoos WCD:</label>
+              <input class="form-control" type="number" id="WCD" name="WCD">
+            </div>
+            <div class="mb-3">
+              <label for="OpbouwraamWCD" class="form-label">Aansluitdoos WCD Opbouwraam:</label>
+              <input class="form-control" type="number" id="OpbouwraamWCD" name="OpbouwraamWCD">
+            </div>
+            <div class="mb-3">
+              <label for="versterker" class="form-label">Signaal versterker:</label>
+              <input class="form-control" type="number" id="versterker" name="versterker">
+            </div>
+            <div class="mb-3">
+              <label for="CoaxMale" class="form-label">Stekker Coax Male:</label>
+              <input class="form-control" type="number" id="CoaxMale" name="CoaxMale">
+            </div>
+            <div class="mb-3">
+              <label for="CoaxFemale" class="form-label">Stekker Coax Female:</label>
+              <input class="form-control" type="number" id="CoaxFemale" name="CoaxFemale">
+            </div>
+            <div class="mb-3">
+              <label for="Fconnector" class="form-label">F-Connector:</label>
+              <input class="form-control" type="number" id="Fconnector" name="Fconnector">
+            </div>
+            <div class="mb-3">
+              <label for="3mfconkabel" class="form-label">Standaard Modem aansluitkabel 3 meter F-connector:</label>
+              <input class="form-control" type="number" id="3mfconkabel" name="3mfconkabel">
+            </div>
+            <div class="mb-3">
+              <label for="3mTVkabelIEC" class="form-label">Standaard TV aansluitkabel 3 meter IEC:</label>
+              <input class="form-control" type="number" id="3mTVkabelIEC" name="3mTVkabelIEC">
+            </div>
+            <div class="mb-3">
+              <label for="5mTVkabel4G" class="form-label">TV aansluitkabel 5 meter 4G proof:</label>
+              <input class="form-control" type="number" id="5mTVkabel4G" name="5mTVkabel4G">
+            </div>
+            <div class="mb-3">
+              <label for="verstkabel" class="form-label">aansluitkabel voor antenne versterker:</label>
+              <input class="form-control" type="number" id="verstkabel" name="verstkabel">
+            </div>
+            <div class="mb-3">
+              <label for="Modem" class="form-label">Vervangend Modem:</label>
+              <input class="form-control" type="number" id="Modem" name="Modem">
+            </div>
+            <div class="mb-3">
+              <label for="arbeid" class="form-label">Arbeid per half uur:</label>
+              <input class="form-control" type="number" id="arbeid" name="arbeid">
+            </div>
+            <div class="mb-3">
+              <label for="OverigMateriaal" class="form-label">Overig Materiaal (Naam en aantal):</label>
+              <textarea class="form-control" type="text" id="OverigMateriaal" name="OverigMateriaal" rows="5"></textarea>
+            </div>
+            <hr>
+            <!-- Signature -->
+            <div class="mb-3">
+              <label for="sig-canvas" class="form-label">Handtekening:</label><br>
+              <canvas id="sig-canvas" width="620" height="160" style="border: 1px solid;">
+                  Browser niet ondersteund.
+              </canvas>
+            </div>
+            <div class="mb-3">
+              <button class="btn btn-primary" type="submit" id="sig-submitBtn">Verzenden</button>
+              <button class="btn btn-secondary" id="sig-clearBtn">Reset</button>
+            </div>
+            <div class="mb-3">
+              <textarea name="code" id="sig-dataUrl" class="form-control" type="text" disabled></textarea>
+              <img id="sig-image" src="" alt="Your signature will go here!" hidden>
+            </div>
+          </form>
+      
+{% endfor %}
+<script>
+    (function() {
+      window.requestAnimFrame = (function(callback) {
+        return window.requestAnimationFrame ||
+          window.webkitRequestAnimationFrame ||
+          window.mozRequestAnimationFrame ||
+          window.oRequestAnimationFrame ||
+          window.msRequestAnimaitonFrame ||
+          function(callback) {
+            window.setTimeout(callback, 1000 / 60);
+          };
+      })();
+    
+      var canvas = document.getElementById("sig-canvas");
+      var ctx = canvas.getContext("2d");
+      ctx.strokeStyle = "#222222";
+      ctx.lineWidth = 4;
+    
+      var drawing = false;
+      var mousePos = {
+        x: 0,
+        y: 0
+      };
+      var lastPos = mousePos;
+    
+      canvas.addEventListener("mousedown", function(e) {
+        drawing = true;
+        lastPos = getMousePos(canvas, e);
+      }, false);
+    
+      canvas.addEventListener("mouseup", function(e) {
+        drawing = false;
+      }, false);
+    
+      canvas.addEventListener("mousemove", function(e) {
+        mousePos = getMousePos(canvas, e);
+      }, false);
+    
+      // Add touch event support for mobile
+      canvas.addEventListener("touchstart", function(e) {
+    
+      }, false);
+    
+      canvas.addEventListener("touchmove", function(e) {
+        var touch = e.touches[0];
+        var me = new MouseEvent("mousemove", {
+          clientX: touch.clientX,
+          clientY: touch.clientY
+        });
+        canvas.dispatchEvent(me);
+      }, false);
+    
+      canvas.addEventListener("touchstart", function(e) {
+        mousePos = getTouchPos(canvas, e);
+        var touch = e.touches[0];
+        var me = new MouseEvent("mousedown", {
+          clientX: touch.clientX,
+          clientY: touch.clientY
+        });
+        canvas.dispatchEvent(me);
+      }, false);
+    
+      canvas.addEventListener("touchend", function(e) 
+        {
+            var me = new MouseEvent("mouseup", {});canvas.dispatchEvent(me);igText.innerHTML = dataUrl;sigImage.setAttribute("src", dataUrl);
+        }, false);
+        
+    
+      function getMousePos(canvasDom, mouseEvent) {
+        var rect = canvasDom.getBoundingClientRect();
+        return {
+          x: mouseEvent.clientX - rect.left,
+          y: mouseEvent.clientY - rect.top
+        }
+      }
+    
+      function getTouchPos(canvasDom, touchEvent) {
+        var rect = canvasDom.getBoundingClientRect();
+        return {
+          x: touchEvent.touches[0].clientX - rect.left,
+          y: touchEvent.touches[0].clientY - rect.top
+        }
+      }
+    
+      function renderCanvas() {
+        if (drawing) {
+          ctx.moveTo(lastPos.x, lastPos.y);
+          ctx.lineTo(mousePos.x, mousePos.y);
+          ctx.stroke();
+          lastPos = mousePos;
+        }
+      }
+    
+      // Prevent scrolling when touching the canvas
+      document.body.addEventListener("touchstart", function(e) {
+        if (e.target == canvas) {
+          e.preventDefault();
+        }
+      }, false);
+      document.body.addEventListener("touchend", function(e) {
+        if (e.target == canvas) {
+          e.preventDefault();
+        }
+      }, false);
+      document.body.addEventListener("touchmove", function(e) {
+        if (e.target == canvas) {
+          e.preventDefault();
+        }
+      }, false);
+    
+      (function drawLoop() {
+        requestAnimFrame(drawLoop);
+        renderCanvas();
+      })();
+    
+      function clearCanvas() {
+        canvas.width = canvas.width;
+      }
+    
+      // Set up the UI
+      var sigText = document.getElementById("sig-dataUrl");
+      var sigImage = document.getElementById("sig-image");
+      var clearBtn = document.getElementById("sig-clearBtn");
+      var submitBtn = document.getElementById("sig-submitBtn");
+      clearBtn.addEventListener("click", function(e) {
+        clearCanvas();
+        sigText.innerHTML = "Data URL for your signature will go here!";
+        sigImage.setAttribute("src", "");
+      }, false);
+      submitBtn.addEventListener("click", function(e) {
+        var dataUrl = canvas.toDataURL();
+        sigText.innerHTML = dataUrl;
+        sigImage.setAttribute("src", dataUrl);
+      }, false);
+    
+    })();
+    </script>

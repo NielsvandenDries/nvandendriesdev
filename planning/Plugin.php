@@ -17,6 +17,7 @@ class Plugin extends PluginBase
             '\Nvandendriesdev\Planning\Components\Planninglist' => 'Planninglist',
             '\Nvandendriesdev\Planning\Components\development' => 'development',
             '\Nvandendriesdev\Planning\Components\Tapkastenlijst' => 'Tapkastenlijst',
+            '\Nvandendriesdev\Planning\Components\Werkbon' => 'Werkbon',
         ];
     }
 }
