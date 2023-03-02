@@ -4,19 +4,19 @@
     
         <h1>{{ bon.werkbonnaam }} - {{ bon.park }}</h1>
         <hr>
-        <form>
+        <form data-request="onSave">
             <!-- Klant fields -->
             <div class="mb-3">
               <label for="EngineerNaam" class="form-label">Naam Engineer:</label>
-              <input class="form-control" type="number" id="EngineerNaam" name="EngineerNaam">
+              <input class="form-control" type="text" id="EngineerNaam" name="EngineerNaam">
             </div>
             <div class="mb-3">
               <label for="OwnerNaam" class="form-label">Naam Eigenaar:</label>
-              <input class="form-control" type="number" id="OwnerNaam" name="OwnerNaam">
+              <input class="form-control" type="text" id="OwnerNaam" name="OwnerNaam">
             </div>
             <div class="mb-3">
               <label for="adres" class="form-label">Adres kavel:</label>
-              <input class="form-control" type="number" id="adres" name="adres">
+              <input class="form-control" type="text" id="adres" name="adres">
             </div>
             <hr>
             <!-- Item Fields -->

@@ -12,6 +12,7 @@ use Nvandendriesdev\Planning\Models\Werkbonnen;
  */
 class Werkbon extends ComponentBase
 {
+    public $table;
     public $bon;
     public function componentDetails()
     {
@@ -51,5 +52,10 @@ class Werkbon extends ComponentBase
         // filter op park (multipark functie) werkbonnaam
         $this->bon = Werkbonnen::where('park', $this->property('park'))->get()->toArray();
         $this->bon = Werkbonnen::where('werkbonnaam', $this->property('werkbonnaam'))->get()->toArray();
+    }
+
+    function onSave()
+    {
+        $table->string('code')->unique();
     }
 }
