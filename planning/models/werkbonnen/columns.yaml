@@ -1,10 +1,79 @@
 columns:
+    id:
+        label: id
+        type: number
+    engineer_name:
+        label: engineer_name
+        type: text
+    customer_name:
+        label: customer_name
+        type: text
+    customer_address:
+        label: customer_address
+        type: text
+    pof:
+        label: pof
+        type: number
+    cable:
+        label: cable
+        type: number
+    verloop:
+        label: verloop
+        type: number
+    fconnectorkoppel:
+        label: fconnectorkoppel
+        type: number
+    verloophaaks:
+        label: verloophaaks
+        type: number
+    wcd:
+        label: wcd
+        type: number
+    opbouwraamwcd:
+        label: opbouwraamwcd
+        type: number
+    versterker:
+        label: versterker
+        type: number
+    coaxmale:
+        label: coaxmale
+        type: number
+    fconnector:
+        label: fconnector
+        type: number
+    3mfconkabel:
+        label: 3mfconkabel
+        type: number
+    3mtvkabeliec:
+        label: 3mtvkabeliec
+        type: number
+    5mtvkabel4g:
+        label: 5mtvkabel4g
+        type: number
+    verstkabel:
+        label: verstkabel
+        type: number
+    modem:
+        label: modem
+        type: number
+    arbeid:
+        label: arbeid
+        type: number
+    overigmateriaal:
+        label: overigmateriaal
+        type: text
+    signature:
+        label: signature
+        type: text
+    created_at:
+        label: created_at
+        type: datetime
     updated_at:
-        label: 'Laatste Update'
+        label: updated_at
         type: datetime
     werkbonnaam:
-        label: Naam
+        label: werkbonnaam
         type: text
     park:
-        label: Park
+        label: park
         type: text

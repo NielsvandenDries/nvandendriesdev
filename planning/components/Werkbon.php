@@ -6,13 +6,14 @@
 
 use Cms\Classes\ComponentBase;
 use Nvandendriesdev\Planning\Models\Werkbonnen;
+use Validator;
+use Redirect;
 
 /**
  * Werkbon Component
  */
 class Werkbon extends ComponentBase
 {
-    public $table;
     public $bon;
     public function componentDetails()
     {
@@ -54,8 +55,40 @@ class Werkbon extends ComponentBase
         $this->bon = Werkbonnen::where('werkbonnaam', $this->property('werkbonnaam'))->get()->toArray();
     }
 
-    function onSave()
+    function onSend()
     {
-        $table->string('code')->unique();
+        $data = post();
+        Werkbonnen::create([
+            'id ' => $data['id'],
+            'engineer_name' => $data['engineer_name'],
+            'customer_name' => $data['customer_name'],
+            'customer_address' => $data['customer_address'],
+            'pof' => $data['pof'],
+            'cable' => $data['cable'],
+            'verloop' => $data['verloop'],
+            'fconnectorkoppel' => $data['fconnectorkoppel'],
+            'verloophaaks' => $data['verloophaaks'],
+            'wcd' => $data['wcd'],
+            'opbouwraamwcd' => $data['opbouwraamwcd'],
+            'versterker' => $data['versterker'],
+            'coaxmale' => $data['coaxmale'],
+            'fconnector' => $data['fconnector'],
+            '3mfconkabel' => $data['3mfconkabel'],
+            '3mtvkabeliec' => $data['3mtvkabeliec'],
+            '5mtvkabel4g' => $data['5mtvkabel4g'],
+            'verstkabel' => $data['verstkabel'],
+            'modem' => $data['modem'],
+            'arbeid' => $data['arbeid'],
+            'overigmateriaal' => $data['overigmateriaal'],
+            'signature' => $data['signature'],
+            'created_at' => $data['created_at'],
+            'updated_at' => $data['updated_at'],
+            'werkbonnaam' => $data['werkbonnaam'],
+            'park' => $data['park'],
+        ]);
+
+        Flash::success('Message sent successfully!');
+
+        return Redirect::back();
     }
 }

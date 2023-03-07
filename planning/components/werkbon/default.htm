@@ -4,93 +4,93 @@
     
         <h1>{{ bon.werkbonnaam }} - {{ bon.park }}</h1>
         <hr>
-        <form data-request="onSave">
+        <form data-request="onSend">
             <!-- Klant fields -->
-            <div class="mb-3">
-              <label for="EngineerNaam" class="form-label">Naam Engineer:</label>
-              <input class="form-control" type="text" id="EngineerNaam" name="EngineerNaam">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="text" id="floatingEngineerNaam" name="EngineerNaam">
+              <label for="floatingEngineerNaam" class="form-label">Naam Engineer:</label>
             </div>
-            <div class="mb-3">
-              <label for="OwnerNaam" class="form-label">Naam Eigenaar:</label>
-              <input class="form-control" type="text" id="OwnerNaam" name="OwnerNaam">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="text" id="floatingOwnerNaam" name="OwnerNaam">
+              <label for="floatingOwnerNaam" class="form-label">Naam Eigenaar:</label>
             </div>
-            <div class="mb-3">
-              <label for="adres" class="form-label">Adres kavel:</label>
-              <input class="form-control" type="text" id="adres" name="adres">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="text" id="floatingadres" name="adres">
+              <label for="floatingadres" class="form-label">Adres kavel:</label>
             </div>
             <hr>
             <!-- Item Fields -->
-            <div class="mb-3">
-              <label for="POF" class="form-label">Onderband Filter/splitter POF:</label>
-              <input class="form-control" type="number" id="POF" name="POF">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="number" id="floatingPOF" name="POF">
+              <label for="floatingPOF" class="form-label">Onderband Filter/splitter POF:</label>
             </div>
-            <div class="mb-3">
-              <label for="Kabel" class="form-label">Kabelkeur Coaxkabel per meter:</label>
-              <input class="form-control" type="number" id="Kabel" name="Kabel">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="number" id="floatingKabel" name="Kabel">
+              <label for="floatingKabel" class="form-label">Kabelkeur Coaxkabel per meter:</label>
             </div>
-            <div class="mb-3">
-              <label for="verloop" class="form-label">Verloopstekker male/female recht:</label>
-              <input class="form-control" type="number" id="verloop" name="verloop">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="number" id="floatingverloop" name="verloop">
+              <label for="floatingverloop" class="form-label">Verloopstekker male/female recht:</label>
             </div>
-            <div class="mb-3">
-              <label for="fconnectorkoppel" class="form-label">F-Connector koppelstuk - Female:</label>
-              <input class="form-control" type="number" id="fconnectorkoppel" name="fconnectorkoppel">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="number" id="floatingfconnectorkoppel" name="fconnectorkoppel">
+              <label for="floatingfconnectorkoppel" class="form-label">F-Connector koppelstuk - Female:</label>
             </div>
-            <div class="mb-3">
-              <label for="verloophaaks" class="form-label">Verloopstekker male/female recht haaks:</label>
-              <input class="form-control" type="number" id="verloophaaks" name="verloophaaks">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="number" id="floatingverloophaaks" name="verloophaaks">
+              <label for="floatingverloophaaks" class="form-label">Verloopstekker male/female recht haaks:</label>
             </div>
-            <div class="mb-3">
-              <label for="WCD" class="form-label">Aansluitdoos WCD:</label>
-              <input class="form-control" type="number" id="WCD" name="WCD">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="number" id="floatingWCD" name="WCD">
+              <label for="floatingWCD" class="form-label">Aansluitdoos WCD:</label>
             </div>
-            <div class="mb-3">
-              <label for="OpbouwraamWCD" class="form-label">Aansluitdoos WCD Opbouwraam:</label>
-              <input class="form-control" type="number" id="OpbouwraamWCD" name="OpbouwraamWCD">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="number" id="floatingOpbouwraamWCD" name="OpbouwraamWCD">
+              <label for="floatingOpbouwraamWCD" class="form-label">Aansluitdoos WCD Opbouwraam:</label>
             </div>
-            <div class="mb-3">
-              <label for="versterker" class="form-label">Signaal versterker:</label>
-              <input class="form-control" type="number" id="versterker" name="versterker">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="number" id="floatingversterker" name="versterker">
+              <label for="floatingversterker" class="form-label">Signaal versterker:</label>
             </div>
-            <div class="mb-3">
-              <label for="CoaxMale" class="form-label">Stekker Coax Male:</label>
-              <input class="form-control" type="number" id="CoaxMale" name="CoaxMale">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="number" id="floatingCoaxMale" name="CoaxMale">
+              <label for="floatingCoaxMale" class="form-label">Stekker Coax Male:</label>
             </div>
-            <div class="mb-3">
-              <label for="CoaxFemale" class="form-label">Stekker Coax Female:</label>
-              <input class="form-control" type="number" id="CoaxFemale" name="CoaxFemale">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="number" id="floatingCoaxFemale" name="CoaxFemale">
+              <label for="floatingCoaxFemale" class="form-label">Stekker Coax Female:</label>
             </div>
-            <div class="mb-3">
-              <label for="Fconnector" class="form-label">F-Connector:</label>
-              <input class="form-control" type="number" id="Fconnector" name="Fconnector">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="number" id="floatingFconnector" name="Fconnector">
+              <label for="floatingFconnector" class="form-label">F-Connector:</label>
             </div>
-            <div class="mb-3">
-              <label for="3mfconkabel" class="form-label">Standaard Modem aansluitkabel 3 meter F-connector:</label>
-              <input class="form-control" type="number" id="3mfconkabel" name="3mfconkabel">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="number" id="floating3mfconkabel" name="3mfconkabel">
+              <label for="floating3mfconkabel" class="form-label">Standaard Modem aansluitkabel 3 meter F-connector:</label>
             </div>
-            <div class="mb-3">
-              <label for="3mTVkabelIEC" class="form-label">Standaard TV aansluitkabel 3 meter IEC:</label>
-              <input class="form-control" type="number" id="3mTVkabelIEC" name="3mTVkabelIEC">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="number" id="floating3mTVkabelIEC" name="3mTVkabelIEC">
+              <label for="floating3mTVkabelIEC" class="form-label">Standaard TV aansluitkabel 3 meter IEC:</label>
             </div>
-            <div class="mb-3">
-              <label for="5mTVkabel4G" class="form-label">TV aansluitkabel 5 meter 4G proof:</label>
-              <input class="form-control" type="number" id="5mTVkabel4G" name="5mTVkabel4G">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="number" id="floating5mTVkabel4G" name="5mTVkabel4G">
+              <label for="floating5mTVkabel4G" class="form-label">TV aansluitkabel 5 meter 4G proof:</label>
             </div>
-            <div class="mb-3">
-              <label for="verstkabel" class="form-label">aansluitkabel voor antenne versterker:</label>
-              <input class="form-control" type="number" id="verstkabel" name="verstkabel">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="number" id="floatingverstkabel" name="verstkabel">
+              <label for="floatingverstkabel" class="form-label">aansluitkabel voor antenne versterker:</label>
             </div>
-            <div class="mb-3">
-              <label for="Modem" class="form-label">Vervangend Modem:</label>
-              <input class="form-control" type="number" id="Modem" name="Modem">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="number" id="floatingModem" name="Modem">
+              <label for="floatingModem" class="form-label">Vervangend Modem:</label>
             </div>
-            <div class="mb-3">
-              <label for="arbeid" class="form-label">Arbeid per half uur:</label>
-              <input class="form-control" type="number" id="arbeid" name="arbeid">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="number" id="floatingarbeid" name="arbeid">
+              <label for="floatingarbeid" class="form-label">Arbeid per half uur:</label>
             </div>
-            <div class="mb-3">
-              <label for="OverigMateriaal" class="form-label">Overig Materiaal (Naam en aantal):</label>
-              <textarea class="form-control" type="text" id="OverigMateriaal" name="OverigMateriaal" rows="5"></textarea>
+            <div class="form-floating mb-3">
+              <textarea class="form-control" type="text" id="floatingOverigMateriaal" name="OverigMateriaal"></textarea>
+              <label for="floatingOverigMateriaal" class="form-label">Overig Materiaal (Naam en aantal):</label>
             </div>
             <hr>
             <!-- Signature -->
@@ -100,11 +100,11 @@
                   Browser niet ondersteund.
               </canvas>
             </div>
-            {# <div class="mb-3"> #}
-            {#   <button class="btn btn-primary" type="submit" id="sig-submitBtn">Verzenden</button> #}
-            {#   <button class="btn btn-secondary" id="sig-clearBtn">Reset</button> #}
-            {# </div> #}
-            <div class="mb-3">
+             <div class="form-floating mb-3">
+               <button class="btn btn-primary" type="submit" id="sig-submitBtn">Verzenden</button>
+               <button class="btn btn-secondary" id="sig-clearBtn">Reset</button>
+             </div>
+            <div class="form-floating mb-3">
               <textarea name="code" id="sig-dataUrl" class="form-control" type="text" disabled></textarea>
               <img id="sig-image" src="" alt="Your signature will go here!" hidden>
             </div>
@@ -139,6 +139,9 @@
     canvas.addEventListener("mousedown", function(e) {
       drawing = true;
       lastPos = getMousePos(canvas, e);
+      var dataUrl = canvas.toDataURL();
+      sigText.innerHTML = dataUrl;
+      sigImage.setAttribute("src", dataUrl);
     }, false);
   
     canvas.addEventListener("mouseup", function(e) {
@@ -239,18 +242,18 @@
     // Set up the UI
     var sigText = document.getElementById("sig-dataUrl");
     var sigImage = document.getElementById("sig-image");
-    var clearBtn = document.getElementById("sig-clearBtn");
-    var submitBtn = document.getElementById("sig-submitBtn");
-    clearBtn.addEventListener("click", function(e) {
-      clearCanvas();
-      sigText.innerHTML = "Data URL for your signature will go here!";
-      sigImage.setAttribute("src", "");
-    }, false);
-    submitBtn.addEventListener("click", function(e) {
-      var dataUrl = canvas.toDataURL();
-      sigText.innerHTML = dataUrl;
-      sigImage.setAttribute("src", dataUrl);
-    }, false);
+    // var clearBtn = document.getElementById("sig-clearBtn");
+    // var submitBtn = document.getElementById("sig-submitBtn");
+    // clearBtn.addEventListener("click", function(e) {
+    //   clearCanvas();
+    //   sigText.innerHTML = "Data URL for your signature will go here!";
+    //   sigImage.setAttribute("src", "");
+    // }, false);
+    // submitBtn.addEventListener("click", function(e) {
+    //   var dataUrl = canvas.toDataURL();
+    //   sigText.innerHTML = dataUrl;
+    //   sigImage.setAttribute("src", dataUrl);
+    // }, false);
   
   })();
   </script>
